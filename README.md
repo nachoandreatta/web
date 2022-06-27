@@ -1,2 +1,2 @@
 # zide.coderhouse
-Pagina destianada a unaorganizaciòn de torneos de eSports.
+Pagina destinada a una organizacion de torneos de eSports.
