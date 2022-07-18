@@ -1,0 +1,317 @@
+@import url("http://fonts.cdnfonts.com/css/joy-multiplication");
+.nav {
+  background-color: rgba(238, 188, 247, 0.8);
+}
+
+.bv {
+  color: blueviolet;
+  font-size: 125%;
+}
+
+@media (min-width: 280px) and (max-width: 820px) {
+  /*general*/
+  h3, h2 {
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    font-size: 75%;
+  }
+  .text-center {
+    font-size: 100%;
+  }
+  .reglp {
+    text-align: left;
+    margin-left: 5px;
+  }
+  .bot-box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    height: auto;
+  }
+  .dim, .dims, .dim2 {
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .dim3 {
+    max-width: 50vw;
+    max-height: 80px;
+  }
+  .grid1 {
+    width: 100%;
+    padding: auto;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .grid2 {
+    width: 100%;
+    gap: 0px;
+  }
+}
+.pos-foot {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-left {
+  display: flex;
+  margin-left: 5px;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid1 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding: auto;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+}
+
+.grid-eq {
+  grid-template-columns: repeat(8);
+  grid-template-rows: repeat(2);
+  grid-template-areas: "team team team team team team team team" "team team team team team team team team";
+}
+
+.grid2 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding: auto;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  font-size: 125%;
+}
+
+.grid-tb {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-areas: "pos equipo gan per puntos" "pos team gan per puntos" "pos team gan per puntos" "pos team gan per puntos" "pos team gan per puntos" "pos team gan per puntos" "pos team gan per puntos" "pos team gan per puntos" "pos team gan per puntos";
+}
+
+#pos {
+  grid-area: pos;
+}
+
+#equipo {
+  grid-area: equipo;
+}
+
+#ganados {
+  grid-area: gan;
+}
+
+#perdidos {
+  grid-area: per;
+}
+
+#puntos {
+  grid-area: puntos;
+}
+
+#teams {
+  grid-area: team;
+}
+
+#nav {
+  grid-area: nav;
+}
+
+#footer {
+  grid-area: footer;
+  bottom: 0;
+}
+
+.ptabla {
+  font-size: 125%;
+  color: whitesmoke;
+}
+
+.foot {
+  background-color: #9370d8;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  position: absolute;
+}
+
+.footer-right {
+  margin: auto 40px;
+  display: flex;
+  justify-content: right;
+  vertical-align: middle;
+}
+
+.footer-left {
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: 40px;
+  display: flex;
+  justify-content: left;
+  vertical-align: middle;
+  color: #191970;
+}
+
+.ma {
+  margin-left: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.reglp {
+  font-size: 100%;
+  color: whitesmoke;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+ol {
+  font-size: 110%;
+  color: whitesmoke;
+  list-style: circle;
+  margin-left: 60px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.carousel-center {
+  justify-content: center;
+}
+
+.dim, .dims, .dim2 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+/* extend */
+.dim2 {
+  margin: 40px auto;
+  padding: auto;
+  width: 50%;
+  height: auto;
+}
+
+.dims {
+  max-width: 400px;
+  max-height: 200px;
+}
+
+.dim3 {
+  max-width: 220px;
+  max-height: 220px;
+  min-width: 220px;
+  min-height: 220px;
+}
+
+.dim4 {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.backcaja {
+  background-color: #9370d8;
+  width: 25%;
+  height: auto;
+  margin: auto;
+  padding: auto;
+}
+
+.img {
+  justify-content: left;
+}
+
+.jus-sb {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+* {
+  font-family: "Joy Multiplication", sans-serif;
+  padding: 0%;
+  margin: 0%;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #f5f5f5;
+  font-size: 300%;
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 500%;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+h3 {
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 200%;
+  color: whitesmoke;
+}
+
+p {
+  color: whitesmoke;
+}
+
+.background {
+  background-image: url(../img/fondo\ negro.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 10;
+}
+
+.background2 {
+  background-image: url(../img/fondo\ azul.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 10;
+}
+
+/*# sourceMappingURL=style.css.map */
