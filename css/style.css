@@ -8,20 +8,26 @@
   font-size: 125%;
 }
 
-@media (min-width: 280px) and (max-width: 820px) {
+.img {
+  justify-content: left;
+  max-width: 200px;
+  max-height: fit-content;
+}
+
+@media (min-width: 280px) and (max-width: 992px) {
   /*general*/
-  h3, h2 {
+  h3, h2, h1 {
     text-align: center;
     padding: auto;
     margin: auto;
-    font-size: 75%;
   }
   .text-center {
     font-size: 100%;
   }
   .reglp {
     text-align: left;
-    margin-left: 5px;
+    margin: auto;
+    font-size: 75%;
   }
   .bot-box {
     display: flex;
@@ -51,26 +57,44 @@
     width: 100%;
     gap: 0px;
   }
+  .pos-foot {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+  }
+  .foot {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+  }
+  .footer-right {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    width: 15;
+  }
+  .footer-right img {
+    max-width: 10px;
+    max-height: 10px;
+  }
 }
-.pos-foot {
-  position: relative;
-  bottom: 0;
-  width: 100%;
+@media (min-width: 280px) and (max-width: 1599px) {
+  .jus-sb {
+    display: flex;
+    flex-direction: column;
+  }
 }
-
-.footer-left {
-  display: flex;
-  margin-left: 5px;
-  justify-content: center;
-  text-align: center;
-}
-
-.footer-right {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
 .grid1 {
   width: 100%;
   margin-left: auto;
@@ -153,7 +177,7 @@
 .foot {
   background-color: #9370d8;
   display: flex;
-  height: 60px;
+  height: 80px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -166,6 +190,11 @@
   display: flex;
   justify-content: right;
   vertical-align: middle;
+}
+
+.footer-right img {
+  max-width: 30px;
+  max-height: 30px;
 }
 
 .footer-left {
@@ -245,10 +274,6 @@ ol {
   height: auto;
   margin: auto;
   padding: auto;
-}
-
-.img {
-  justify-content: left;
 }
 
 .jus-sb {
